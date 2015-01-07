@@ -1,0 +1,111 @@
+@charset 'utf-8';
+
+/* Reset styles */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header, main,
+hgroup, menu, nav, section,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font-weight: normal;
+	vertical-align: baseline;
+	background: transparent;
+}
+html, body, document {
+	-ms-touch-action: none;
+}
+body {
+	text-size-adjust: 100% !important;
+	-webkit-text-size-adjust: 100% !important;
+}
+body, input {
+	color: #323232;
+	font-family: Inconsolata;
+}
+article, aside, dialog, figure, figcaption, footer, header,
+hgroup, nav, section, main {
+	display: block;
+}
+ul, ol {
+	list-style: none;
+}
+img {
+	vertical-align: middle;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	text-decoration: none;
+	vertical-align: baseline;
+	background: transparent;
+}
+ins {
+	text-decoration: none;
+}
+mark {
+	font-style: italic;
+	font-weight: bold;
+}
+del {
+	text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+	cursor: help;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+hr {
+	display: block;
+	height: 1px;
+	margin: 1em 0;
+	padding: 0;
+	border: 0;
+}
+input, select {
+	vertical-align: middle;
+}
+
+/* General classes */
+.cf {
+	zoom: 1;
+}
+.cf:after {
+	clear: both;
+	content: '';
+	display: block;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+/* Main styles */
+#jsi-wrapper > .row > div {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background: #999999;
+	opacity: 0.3;
+}

@@ -1,0 +1,154 @@
+@charset 'utf-8';
+
+/* Reset styles */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header, main,
+hgroup, menu, nav, section,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font-weight: normal;
+	vertical-align: baseline;
+	background: transparent;
+}
+html, body, document {
+	-ms-touch-action: none;
+}
+body {
+	text-size-adjust: 100% !important;
+	-webkit-text-size-adjust: 100% !important;
+}
+body, input {
+	color: #323232;
+	font-family: Inconsolata;
+}
+article, aside, dialog, figure, figcaption, footer, header,
+hgroup, nav, section, main {
+	display: block;
+}
+ul, ol {
+	list-style: none;
+}
+img {
+	vertical-align: middle;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	text-decoration: none;
+	vertical-align: baseline;
+	background: transparent;
+}
+ins {
+	text-decoration: none;
+}
+mark {
+	font-style: italic;
+	font-weight: bold;
+}
+del {
+	text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+	cursor: help;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+hr {
+	display: block;
+	height: 1px;
+	margin: 1em 0;
+	padding: 0;
+	border: 0;
+}
+input, select {
+	vertical-align: middle;
+}
+
+/* General classes */
+.cf {
+	zoom: 1;
+}
+.cf:after {
+	clear: both;
+	content: '';
+	display: block;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+/* Main styles */
+.container {
+	width: 1000px;
+	height: 10000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.block > div {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	background: #999999;
+}
+.block.two > div:nth-child(1),
+.block.thr > div:nth-child(2),
+.block.thr > div:nth-child(8) {
+	bottom: 210px;
+}
+.block.two > div:nth-child(2),
+.block.thr > div:nth-child(2),
+.block.thr > div:nth-child(4) {
+	left: 210px;
+}
+.block.two > div:nth-child(3),
+.block.thr > div:nth-child(4),
+.block.thr > div:nth-child(6) {
+	top: 210px;
+}
+.block.two > div:nth-child(4),
+.block.thr > div:nth-child(6),
+.block.thr > div:nth-child(8) {
+	right: 210px;
+}
+.block.thr > div:nth-child(1) {
+	bottom: 420px;
+}
+.block.thr > div:nth-child(3) {
+	left: 420px;
+}
+.block.thr > div:nth-child(5) {
+	top: 420px;
+}
+.block.thr > div:nth-child(7) {
+	right: 420px;
+}
